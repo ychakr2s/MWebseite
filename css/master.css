@@ -1,0 +1,692 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+/*--------------------------------------- Start Framework ---------------------------*/
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+}
+
+.centered {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/*-------------------- Start Scroll ------------------- */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #78807c;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #7196bd;
+    border-radius: 5px;
+    /*width: 13px;*/
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #16579c;
+}
+
+/*------------------------ End Scroll ------------------ */
+/*--------------------------------------- End Framework -----------------------------*/
+
+/* ---------------------------------------Start Responsive -----------------------------*/
+
+@media (max-width: 991px) {
+    .header {
+        height: 100vh;
+    }
+
+    #navbarNavDropdown {
+        margin-top: 5px;
+        padding: 10px;
+        opacity: 0.7;
+        color: #1d1d1d;
+    }
+
+    #navbarNavDropdown .navbar-nav {
+        background-color: black;
+        padding: 20px;
+        border-radius: 3px;
+        opacity: 0.8;
+    }
+
+    #navbarNavDropdown .navbar-nav a:hover {
+        /*background-color: black;*/
+        padding: 20px;
+        border-radius: 3px;
+        color: #000000;
+        /*opacity: 0.8;*/
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+
+    .header .navbar-nav .nav-link {
+        color: #000000;
+    }
+
+    /* -------------------- Start Product --------------------------- */
+    .owl-nav {
+        text-align: center;
+        font-size: 35px;
+        display: block;
+    }
+
+    .bottom-left-up {
+        font-size: 10px;
+    }
+
+    .produkt .produkte {
+        font-size: 15px;
+    }
+
+    .wrapper {
+        font-size: 15px;
+    }
+
+    .pos {
+        font-size: 20px;
+        position: absolute;
+        text-transform: uppercase;
+        bottom: 1px;
+        left: 5px;
+        /*font-size: 24px;*/
+        transform: scale(1);
+        color: #ffffff;
+        padding: 5px;
+    }
+
+    /* ----------------- End Product ------------------*/
+}
+
+@media only screen and (max-width: 450px) {
+    .pos {
+        position: absolute;
+        font-size: 15px !important;
+        bottom: 1px;
+        padding: 1px;
+    }
+
+    .textHandy {
+        font-size: 12px !important;
+    }
+
+    .handy {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-height: 600px) {
+    .header {
+
+    }
+}
+
+/*@media (max-height: 550px) {*/
+/*    .header {*/
+/*        height: 280vh;*/
+/*    }*/
+/*}*/
+
+/* -------------------------------------- End Responsive -------------------------- */
+
+/* -------------------------------------- Start Header------------------ */
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+/* -------------------  Start Navbar --------------- */
+.fixed-top.scrolled {
+    background-color: #49709a !important;
+    transition: background-color 200ms linear;
+    opacity: 0.9;
+}
+
+nav a {
+    color: #ffffff !important;
+}
+
+/*nav .dropdown:hover > .dropdown-menu {*/
+/*    display: block;*/
+/*}*/
+
+nav .navbar-nav a:hover {
+    color: #636a70 !important;
+}
+
+nav .dropdown-menu {
+    background-color: #474C6D;
+}
+
+nav .dropdown-menu {
+    padding: 10px;
+}
+
+.navbar {
+    z-index: 3;
+    background-color: transparent !important;
+    padding: 15px;
+}
+
+.navbar .nav-item .nav-link {
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+nav .navbar-brand {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav .navbar-toggler {
+    background-color: #d8e4ec;
+}
+
+nav .collapse .nav-item {
+    margin-right: 20px;
+    font-weight: 400;
+}
+
+nav .navbar-nav .nav-link {
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    /*color: #000000;*/
+    font-weight: bold;
+}
+
+/*----------------  End Navbar -------------- */
+.header .textSlider {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Poppins;
+    color: #fff;
+}
+
+.header .textSlider h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin: 0px;
+    font-size: 40px;
+}
+
+.header .textSlider p {
+    text-align: center;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #e6d8d8;
+}
+
+.header .main-color {
+    color: #f7600e;
+}
+
+.header .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.header .arrow svg {
+    background: aliceblue;
+    border-radius: 3px;
+}
+
+.header .buttons {
+    text-align: center;
+}
+
+.header .buttons button {
+    background: transparent;
+    padding: 10px 0;
+    width: 180px;
+    font-size: 14px;
+    border: 1px solid #909090;
+    margin: 8px;
+    border-radius: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.header .buttons button:hover {
+    background: #f7600e;
+    border: 1px solid #f7600e;
+}
+
+.header .upper {
+    text-transform: uppercase;
+}
+
+/* -------------------------------------- End Header and Navbar ------------------ */
+
+
+
+/* -------------------------------------- Start News ----------------------------- */
+.bd-callout {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #eee;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: #343a40;
+    background-color: #f7f7f9;
+}
+
+.bd-callout h5 {
+    margin-bottom: .5rem;
+    font-size: 24px;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.animated {
+    -webkit-animation-duration: 2000ms;
+    animation-duration: 5000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animatedLeft {
+    -webkit-animation-duration: 2000ms;
+    animation-duration: 1000ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.onloadLeftToRight {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+.onloadToRightLeft {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+.radius {
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+/* -------------------------------------- End News ----------------------------- */
+/* -------------------------------------- Start aufgaben ----------------------------- */
+
+.aufgaben .back {
+    background-color: #000000;
+    margin: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.aufgaben .back .text {
+    padding: 10px
+}
+
+.aufgaben .back p {
+    margin: 18px;
+}
+
+.aufgaben .back span {
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #808080;
+    line-height: 1.75;
+    font-family: Cairo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.aufgaben .back h2 {
+    margin: 27px 0 0;
+    font-family: Cairo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 35px;
+    text-transform: uppercase;
+    line-height: 1.2em;
+}
+
+.aufgaben .iicon {
+    text-align: center;
+    padding-top: 20px;
+    color: #325579;
+}
+
+.aufgaben .iicon img {
+    width: 65px !important;
+    height: 65px !important;
+    background: #325579;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/* -------------------------------------- End aufgaben ----------------------------- */
+/* ------------------Start Cards ------------------------*/
+.cards .card {
+    margin: 10px 0px 10px 0px;
+}
+
+/*------------------ End Cards -------------------------*/
+/* -------------------------------------- Start Product Owl -------------------------------- */
+.produkt {
+    margin-top: 30px;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.produkt .alleProdukte {
+    float: right;
+    color: #f7600e;
+    cursor: pointer;
+}
+
+.item {
+    border: 0px solid #ffffff;
+    background-color: #d9e0e6;
+}
+
+#owl-demo {
+    margin-top: 15px;
+}
+
+#owl-demo .item {
+    display: block;
+    cursor: pointer;
+    margin: 2px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+#owl-demo .item:hover {
+    opacity: 0.9;
+    background-color: #000000;
+    width: 100%;
+    height: auto;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.owl-nav {
+    text-align: center;
+    font-size: 40px;
+    display: block !important;
+}
+
+.produkt .owl-nav button {
+    /*display: none;*/
+}
+
+/*owl-nav*/
+
+.produkt .owl-nav {
+    display: block !important;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.owl-carousel .overlay-div {
+    /*height:100%;*/
+    /*width: 100%;*/
+    position: absolute;
+    background-color: #000;
+    opacity: .7;
+}
+
+.owlcarousel .owl-nav.disabled {
+    display: block !important;
+}
+
+.owlcarousel .overlay-div {
+    /*height:100%;*/
+    /*width: 100%;*/
+    position: absolute;
+    background-color: #000;
+    opacity: .7;
+}
+
+.bottom-left {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 6px;
+    left: 16px;
+    font-size: 20px;
+    transform: scale(1);
+    color: #ffa012;
+    padding: 18px 18px 18px 18px;
+}
+
+.bottom-left-up {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 35px;
+    left: 16px;
+    font-size: 24px;
+    transform: scale(1);
+    color: #ffffff;
+    padding: 18px 18px 18px 18px;
+}
+
+#demo .item {
+    margin: 3px;
+}
+
+#demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.img-responsive {
+    width: 100%;
+}
+
+/*. {*/
+/*    text-align: right;*/
+/*}produkts*/
+
+.produkt .over {
+    position: relative;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.one {
+    float: left;
+}
+
+.two {
+    overflow: hidden;
+    float: right;
+}
+
+.owl-dots {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.row.row-no-margin {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.col-no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* ------------------------------------ Start Demo ------------------------------ */
+.demo .overlayDemo {
+    position: relative;
+}
+
+.demo .overDemo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+.demo .owl-nav {
+    /*text-align: center;*/
+    /*font-size: 40px;*/
+    display: none !important;
+}
+
+.demo .owl-dots button {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+/*-------------------------------------- End Demo ------------------------------ */
+
+/*Start Kontakt*/
+/*.kontakt {*/
+/*    margin-bottom: 10px;*/
+/*}*/
+
+/*.kontakt .centered {*/
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+
+/*.kontakt .centered h5 {*/
+/*    font-size: 28px;*/
+/*    font-weight: 400;*/
+/*    text-transform: uppercase;*/
+/*    font-family: sans-serif;*/
+/*    line-height: 1.4;*/
+/*}*/
+
+/*.kontakt .centered span {*/
+/*    color: #7ebaff;*/
+/*    font-size: 18px;*/
+/*    font-weight: 500;*/
+/*}*/
+
+
+/* -------------------------------------- Start Footer ---------------------------- */
+footer {
+    color: #ffffff;
+    background-color: #1c2331 !important;
+}
+
+footer .improve {
+    padding-top: 20px;
+    font-size: 20px;
+    line-height: 2;
+    color: #ced6e2;
+    font-weight: 600 !important;
+    font-family: serif;
+    font-style: initial;
+}
+
+footer .mt-5 {
+    margin-top: 0px !important;
+}
+
+.deep-purple.accent-2 {
+    background-color: #7c4dff !important;
+}
+
+.deep-purple {
+    background-color: #673ab7 !important;
+}
+
+footer.page-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-copyright {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* ---------------------------------------  End Footer ------------------------------------ */
+
